@@ -7,7 +7,6 @@ const redis = new Redis({
   host: process.env.REDIS_HOST,
   port: process.env.REDIS_PORT,
   password: process.env.REDIS_PASSWORD,
-  tls: {} // Enables secure connection
 });
 
 redis.on('connect', () => console.log('✅ Redis connected successfully'));
